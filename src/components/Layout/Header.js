@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './header.module.css';
+import HeaderCartButton from './HeaderCartButton'
 
 // import local image
 import mealsImage from '../../assets/meals.jpg'
@@ -11,7 +12,7 @@ const Header = ()=>{
         <React.Fragment>
             <header className={classes.header}>
                 <h1>ReactMeals</h1>
-                <button>Cart</button>
+                <HeaderCartButton/>
             </header>
             <div className={classes['main-image']}>
                 <img src={mealsImage} alt='' />
